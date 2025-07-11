@@ -5,7 +5,7 @@ jobs :
   runs-on : ubunto-latest
   steps :
   - uses : actions/checkout@v2
-  - name : Setup Python 3.13.
+  - name : Setup Python 3.13
     uses : actions/setup-python@v1
     with :
       Python-version :3.13
