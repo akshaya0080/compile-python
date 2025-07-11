@@ -1,5 +1,5 @@
 name : Python application test with Github Actions
-on : [plus]
+on : [push]
 jobs :
  builds :
   runs-on : ubunto-latest
