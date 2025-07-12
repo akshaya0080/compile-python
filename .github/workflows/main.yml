@@ -1,12 +1,16 @@
+name: Python application test with Github Actions
+
+on: [push]
+
 jobs:
-  builds:
+  build:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Setup Python 3.11
+      - name: Set up Python 3.11
         uses: actions/setup-python@v4
         with:
           python-version: '3.11'
@@ -19,4 +23,5 @@ jobs:
 
       - name: Run tests
         run: |
-          python -m pytest
+          pytest
+
